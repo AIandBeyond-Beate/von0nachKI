@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Von 0 nach KI - Vorbereitungsformular</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="main-content">
+        <div class="hero-section">
+            <h1 class="program-title">Online-Programm</h1>
+            <h2 class="main-title">Von 0 nach KI</h2>
+            <p class="subtitle">Dein persönliches 1:1 Programm - Für Frauen in Verantwortung</p>
+            <p class="hero-text">Gewinne Sicherheit im Umgang mit Künstlicher Intelligenz – ohne technisches Fachwissen. Dein persönlicher Weg zu mehr Souveränität in der digitalen Welt und im Umgang mit KI.</p>
+        </div>
+
+        <div class="container">
+            <form id="kiForm" class="form-container" action="https://formspree.io/f/xldbnebn" method="POST">
+                <input type="text" name="_gotcha" style="display:none">
+                <h3>Vorbereitungsformular – Dein Start "Von 0 nach KI"</h3>
+                
+                <p class="intro">Damit ich unsere erste Session optimal auf deine Wünsche abstimmen kann, fülle bitte dieses kurze Formular aus. Dauert maximal 5 Minuten!</p>
+
+                <div class="form-group contact-group">
+                    <div class="contact-field">
+                        <label for="name">Dein Name</label>
+                        <input type="text" id="name" name="name" maxlength="100" required>
+                    </div>
+                    <div class="contact-field">
+                        <label for="email">Deine E-Mail Adresse</label>
+                        <input type="email" id="email" name="email" maxlength="100" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Wie schätzt du dein aktuelles Wissen über Künstliche Intelligenz ein?</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="kiKnowledge" value="keine">
+                            Keine Kenntnisse
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="kiKnowledge" value="kenntnis">
+                            Ich weiß, dass KI etwas kann, habe es aber noch nie ausprobiert
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="kiKnowledge" value="versuche">
+                            Ich habe schon erste Versuche gemacht (z.B. ChatGPT getestet)
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Was möchtest du mit dem Programm erreichen?</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="goal" value="grundlagen">
+                            Grundlagen verstehen
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="goal" value="tools">
+                            KI-Tools sicher im Arbeitsalltag nutzen
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="goal" value="projekte">
+                            Eigene Projekte/Ideen mit KI umsetzen
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="goal" value="mitreden">
+                            Mitreden können, wenn über KI gesprochen wird
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="goal" value="angst">
+                            Angst vor KI abbauen
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="goal" value="sonstiges">
+                            Sonstiges:
+                            <input type="text" name="goalOther" class="other-input" disabled>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="workArea">In welchem Bereich arbeitest du aktuell und wie arbeitest du üblicherweise?</label>
+                    <p class="field-description">Branche, Position und typische Arbeitsweise – z.B. viel schriftliche Kommunikation, Projektarbeit, Beratung etc.</p>
+                    <textarea id="workArea" name="workArea" maxlength="500"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Für welche Aufgaben möchtest du KI einsetzen?</label>
+                    <p class="field-description">Mehrfachauswahl möglich</p>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="tasks" value="texte">
+                            Texte schreiben oder zusammenfassen
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="tasks" value="emails">
+                            E-Mails oder Kommunikation automatisieren
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="tasks" value="ideen">
+                            Ideen und Brainstorming unterstützen
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="tasks" value="recherche">
+                            Recherche und Informationsbeschaffung
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="tasks" value="aufgaben">
+                            Aufgaben organisieren oder visualisieren
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="tasks" value="daten">
+                            Daten analysieren
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="tasks" value="sonstiges">
+                            Sonstiges:
+                            <input type="text" name="tasksOther" class="other-input" disabled>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="interests">Gibt es Tools oder Themen, die dich besonders interessieren?</label>
+                    <textarea id="interests" name="interests" maxlength="500"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="concerns">Was verunsichert dich aktuell noch am meisten beim Thema KI?</label>
+                    <textarea id="concerns" name="concerns" maxlength="500"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Wie lernst du am liebsten?</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="learningStyle" value="anleitungen">
+                            Schritt-für-Schritt-Anleitungen
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="learningStyle" value="beispiele">
+                            Praxisbeispiele
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="learningStyle" value="aufgaben">
+                            Aufgaben zum Ausprobieren
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="learningStyle" value="qa">
+                            Fragen und Antworten (Q&A)
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="learningStyle" value="mischung">
+                            Eine Mischung aus allem
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="additional">Möchtest du mir noch etwas mitgeben, was für die erste Session wichtig sein könnte?</label>
+                    <textarea id="additional" name="additional" maxlength="500"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Absenden</button>
+                </div>
+
+                <p class="outro">Vielen Dank fürs Ausfüllen! Ich freue mich auf unsere erste gemeinsame Session!</p>
+            </form>
+            <p class="datenschutz-hinweis">Hinweis: Die Daten werden über Formspree (DSGVO-konform) verarbeitet und per E-Mail an mich übermittelt. Weitere Informationen findest du in der <a href='https://formspree.io/legal/privacy-policy/' target='_blank' style='color:#a706ad;text-decoration:underline;'>Datenschutzerklärung von Formspree</a>.</p>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://www.ai-and-beyond-consulting.de/impressum">Impressum</a>
+                <a href="https://www.ai-and-beyond-consulting.de/datenschutz">Datenschutz</a>
+            </div>
+            <p class="copyright">© 2025 AI & Beyond Consulting</p>
+        </div>
+    </footer>
+</body>
+</html> 
